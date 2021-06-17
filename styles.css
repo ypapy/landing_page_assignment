@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:  hsl(0, 0%, 100%);
+    min-height: 300px;
+    height: 100%;
+    background-color: #ff4d61;
+    border: 1px solid white;
+    border-bottom-left-radius: 50px;
+}
+
+.header-bottom-div h1 {
+    z-index: 1;
+}
+
+nav {
+    margin: 3% 5%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.svg-intro {
+    width: 1440px;
+    height: 300px;
+    position: absolute;
+    z-index: 0;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul a {
+    text-decoration: none;
+    color:  hsl(0, 0%, 100%);
+}
+
+.middle-menu {
+    justify-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    
+}
+
+.left-menu {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 200px;
+    
+}
+
+
+
+.backwhite {
+    background: hsl(0, 0%, 100%);
+    color:hsl(356, 100%, 66%);
+    
+
+}
+header h5 {
+    font-weight: 10px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.87);
+}
+.header-end {
+    padding: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.round {
+    width: auto;
+    height: auto;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.tekwhite {
+    background: hsl(356, 100%, 66%);
+    color: white;
+}
+
+
