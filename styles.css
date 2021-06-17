@@ -9,17 +9,20 @@ body {
 }
 
 .wrapper {
-    width: 100%;
     max-width: 1440px;
+    width: 100%;
 }
 .header {
     display: flex;
     flex-direction: column;
     text-align: center;
+    flex-wrap: wrap;
     color:  hsl(0, 0%, 100%);
+    width: 100%;
     min-height: 300px;
     height: 100%;
     background-color: #ff4d61;
+    background-image: url('/images/bg-pattern-intro.svg');
     border: 1px solid white;
     border-bottom-left-radius: 50px;
 }
@@ -46,8 +49,11 @@ nav ul {
     list-style-type: none;
 }
 nav ul a {
-    text-decoration: none;
+  
     color:  hsl(0, 0%, 100%);
+}
+.header a {
+    text-decoration: none;
 }
 
 .middle-menu {
@@ -57,12 +63,15 @@ nav ul a {
     width: 300px;
     
 }
+.header a:hover {
+    color: yellow;
+}
 
 .left-menu {
     display: flex;
     align-self: flex-end;
     justify-content: space-between;
-    width: 200px;
+    width: 150px;
     
 }
 
@@ -74,6 +83,7 @@ nav ul a {
     
 
 }
+
 header h5 {
     font-weight: 10px;
     font-size: 10px;
@@ -98,6 +108,23 @@ header h5 {
 .tekwhite {
     background: hsl(356, 100%, 66%);
     color: white;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    /* .wrapper {
+        min-width: 375px;
+    } */
+    .middle-menu, .left-menu{
+        display: none;
+        
+    }
+    .burger {
+        display: block;
+    }
 }
 
 
