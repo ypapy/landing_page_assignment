@@ -9,8 +9,11 @@ body {
 }
 
 .wrapper {
+    margin:auto;
     max-width: 1440px;
     width: 100%;
+    overflow-x: hidden;
+    
 }
 .header {
     display: flex;
@@ -21,14 +24,19 @@ body {
     width: 100%;
     min-height: 300px;
     height: 100%;
-    background-color: #ff4d61;
+    background-color: #f05c52;
     background-image: url('/images/bg-pattern-intro.svg');
     border: 1px solid white;
     border-bottom-left-radius: 50px;
 }
 
+.header h2 {
+    color: hsl(0, 0%, 100%);
+}
+
 .header-bottom-div h1 {
     z-index: 1;
+    font-weight: bolder;
 }
 
 nav {
@@ -52,19 +60,27 @@ nav ul a {
   
     color:  hsl(0, 0%, 100%);
 }
-.header a {
+a {
     text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease-out;
+}
+.right-nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .middle-menu {
-    justify-self: flex-start;
     display: flex;
-    justify-content: space-between;
-    width: 300px;
-    
+    justify-content: space-between;  
 }
-.header a:hover {
+.middle-menu li {
+    margin-left: 1rem;
+}
+a:hover {
     color: yellow;
+    transform: rotate(10deg);
+    background: hsl(355, 100%, 74%);
 }
 
 .left-menu {
@@ -84,15 +100,20 @@ nav ul a {
 
 }
 
-header h5 {
+.grow {
     font-weight: 10px;
     font-size: 10px;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(231, 229, 229, 0.87);
+    padding-top: 20px;
 }
 .header-end {
+    width: auto;
     padding: 50px;
     font-size: 16px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+
 }
 
 .round {
@@ -106,24 +127,253 @@ header h5 {
 }
 
 .tekwhite {
-    background: hsl(356, 100%, 66%);
+    
     color: white;
+    margin-left: 20px;
 }
 
 .burger {
     display: none;
 }
 
-@media screen and (max-width: 760px) {
+.middle-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+.robust-images {
+    max-width: 500px;
+}
+
+.robust-images img {
+    padding-left: 10em;
+    height: 45em;
+    width: auto;
+    
+}
+.robust-content {
+    max-width: 500px;
+}
+
+.wrapper-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper-body h2 {
+    padding-top: 5rem;
+}
+p {
+    
+    line-height: 1.5;
+    font-weight: 0.5rem;
+    text-align: justify;
+    padding: 1rem 0;
+}
+.wrapper-body h1, h2, h3, h4, p {
+    color: hsl(208, 49%, 24%);
+}
+.robust-h4 {
+    padding-top: 2rem;
+}
+
+.phones {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.phones-phones{
+    height: 25rem;
+    margin-top: 5rem;
+    background: hsl(237, 17%, 21%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: #dcc;
+
+}
+
+.phones-phones p{
+ margin-left: 35rem;
+ margin-right: 10rem;
+ font-weight: 150;
+ font-size: 0.8rem;
+ color: #dcc;
+}
+
+.phones-phones h2 {
+    padding-right: 1rem;
+    font-weight: 300;
+    color: #dcc;
+}
+
+.phones img {
+    position: absolute;
+    
+}
+
+.computer {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+}
+.computer-image {
+    max-width: 600px;
+    margin-right: 10rem;
+    align-self: flex-start;
+}
+.computer img {
+    width: 40rem;
+}
+.computer-content {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.footer {
+    width: 100%;
+    height: 20rem;
+    background-color: hsl(240, 10%, 16%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-right-radius: 50px;
+}
+.footer ul {
+    list-style: none;
+    padding-top: 1rem;
+
+}
+.footer ul li {
+    padding-top: 1rem;
+}
+
+.footer h1 ,h3 , a {
+    color: white;
+}
+
+.footer h1 {
+    padding-bottom: 10rem;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
     /* .wrapper {
         min-width: 375px;
     } */
+    
     .middle-menu, .left-menu{
         display: none;
         
     }
     .burger {
         display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+
+
+    .robust-images {
+        width: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    .robust-images img {
+        padding-left: 0;
+        height: auto;
+        width: auto;
+        
+    }
+    .robust-content {
+        width: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .middle-content {
+        flex-direction: column-reverse;
+    }
+
+    .phones {
+        flex-direction: column;
+    }
+
+    .phones-phones p {
+        margin: 0;
+        padding-left:2rem;
+        padding-right: 2rem;
+    }
+    .phones-phones h2 {
+        padding-right: 0;
+        padding-top: 12rem;
+    }
+    .phones img {
+        width: 20rem;
+
+        
+    }
+
+    .computer {
+        width: 100%;
+        padding-top: 3rem;
+        flex-direction: column;
+        margin-right: 0;
+       
+    }
+
+    .computer-image {
+        justify-self: center;
+        align-self: center;
+    }
+    .computer img {
+        margin-right: 0;
+        width: 25rem;
+        padding-left: 8rem;
+    }
+    .computer-content {
+        align-items: center;
+        padding-right: 0;
+        width: auto;
+        padding: 0 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer h1,h3 {
+        padding-bottom: 2rem;
+    }
+   
+    .footer ul { 
+        padding-top: 0;
+    }
+    .footer ul li {
+        padding-bottom: 1rem;
     }
 }
 
