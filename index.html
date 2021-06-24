@@ -5,28 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
   <title>ypapy | [Blogr]</title>
 </head>
 <body>
   <div class="wrapper">
     <!-- <img class="svg-intro" src="/images/bg-pattern-intro.svg" alt="svag"> -->
     <div class="header">
-      
       <nav>
-        <div class="right-nav">
-          <h2 class="logo">Blogr</h2>
-          <ul class="middle-menu">
-            <li><a href="#">Product <img src="/images/icon-arrow-light.svg" alt="icon arrow l"></a></li>
-            <li><a href="#">Company <img src="/images/icon-arrow-light.svg" alt="icon arrow l"></a></li>
-            <li><a href="#">Connect <img src="/images/icon-arrow-light.svg" alt="icon arrow l"></a></li>
-          </ul>
+        <div class="navbar">
+          <div class="logo"><a href="#">Blogr</a></div>
+          <div class="nav-links">
+            <ul class="links">
+              <li>
+                <a class="arrow-ancor" href="#">Product <img class="arrow arrow-dark" src="./images/icon-arrow-dark.svg" alt="icon arrow l"><img class="arrow arrow-white" src="./images/icon-arrow-light.svg" alt="icon arrow l"></a>
+                <ul class="submenu">
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Integrations</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="arrow-ancor" href="#">Company <img class="arrow arrow-dark" src="./images/icon-arrow-dark.svg" alt="icon arrow l"><img class="arrow arrow-white" src="./images/icon-arrow-light.svg" alt="icon arrow l"></a>
+                <ul class="submenu">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="arrow-ancor" href="#">Connect <img class="arrow arrow-dark" src="./images/icon-arrow-dark.svg" alt="icon arrow l"><img class="arrow arrow-white" src="./images/icon-arrow-light.svg" alt="icon arrow l"></a>
+                <ul class="submenu">
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">NewsLetter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <ul class="links">
+              <li><a href="#">Login</a></li>
+              <li><a class="backwhite round" href="#">Sign up</a></li>
+            </ul>
+          </div>
+          <div><img class="burger" src="./images/icon-hamburger.svg" alt="burger"></div>
         </div>
-        <ul class="left-menu">
-          <li><a href="#">Login</a></li>
-          <li><a class="backwhite round" href="#">Sign up</a></li>
-        </ul>
-        <img class="burger" src="/images/icon-hamburger.svg" alt="burger">
       </nav>
       <div class="header-bootom-div">
         <h1>A modern publishing platfom</h1>
@@ -55,13 +81,13 @@
           </p>
         </div>
         <div class="robust-images">
-          <img class="desktop" src="images/illustration-editor-desktop.svg" alt="desktop">
-          <img class="mobile" src="images/illustration-editor-mobile.svg" alt="desktop">
+          <img class="desktop" src="./images/illustration-editor-desktop.svg" alt="desktop">
+          <img class="mobile" src="./images/illustration-editor-mobile.svg" alt="desktop">
         </div>
       </div>
       <div class="phones">
         <div class="phones-img">
-          <img src="images/illustration-phones.svg" alt="Phones">
+          <img src="./images/illustration-phones.svg" alt="Phones">
         </div>
         <div class="phones-phones">
           <h2>State of the art infrastructure</h2>
@@ -74,8 +100,8 @@
       </div>
       <div class="computer">
         <div class="computer-image">
-          <img class="desktop" src="images/illustration-laptop-desktop.svg" alt="laptop">
-          <img class ="mobile" src="images/illustration-laptop-mobile.svg" alt="mobile">
+          <img class="desktop" src="./images/illustration-laptop-desktop.svg" alt="laptop">
+          <img class ="mobile" src="./images/illustration-laptop-mobile.svg" alt="mobile">
         </div>
         <div class="computer-content">
           <h4>Free, Open, simple</h4>
@@ -125,7 +151,9 @@
     </div>
   </div>
 
-
+  <script src="./main.js">
+    
+  </script>
 
 
 
