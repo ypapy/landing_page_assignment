@@ -25,7 +25,7 @@ body {
     min-height: 300px;
     height: 100%;
     background-color: #f05c52;
-    background-image: url('/images/bg-pattern-intro.svg');
+    /* background-image: url('./images/bg-pattern-circles.svg') no-repeat; */
     border: 1px solid white;
     border-bottom-left-radius: 50px;
 }
@@ -81,6 +81,7 @@ nav .navbar .nav-links .links li:hover .arrow {
     top: 50px;
     line-height: 2;
     display: none;
+    opacity: 1;
 }
 .navbar .nav-links .links li:hover .submenu {
     display: block;
@@ -216,6 +217,7 @@ p {
 }
 
 .phones-phones h2 {
+    margin-left: 27rem;
     padding-right: 1rem;
     font-weight: 300;
     color: #dcc;
@@ -286,6 +288,9 @@ p {
     nav {
         padding: 1rem;
     }
+    .phones-phones h2 {
+        margin-left: 0;
+    }
     nav .navbar .nav-links {
         margin-top: 1rem;
         flex-direction: column;
@@ -339,6 +344,7 @@ p {
     }
     .header-bootom-div {
         margin: 4rem auto;
+        padding-top: 100px;
     }
     .desktop {
         display: none;
