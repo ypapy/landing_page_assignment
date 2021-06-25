@@ -1,8 +1,14 @@
 const burger = document.querySelector('.burger');
-const middleMenu = document.querySelector('.middle-menu');
-const leftMenu = document.querySelector('.left-menu');
+const navLinks = document.querySelector('.nav-links');
+const close_icon = document.querySelector('.close_icon');
 burger.addEventListener('click', ()=>{
-    middleMenu.style.display = "block";
-    leftMenu.style.display = "block";
+    navLinks.style.display = "block";
+    burger.style.display = "none";
+    close_icon.style.display = "block";
 })
-console.log('hello')
+
+close_icon.addEventListener('click', ()=>{
+    navLinks.style.display = "none";
+    burger.style.display = "block";
+    close_icon.style.display = "none";
+})
